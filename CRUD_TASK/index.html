@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class="container">
+
+        
+        <label for="uName" id="label1"> Name :</label>
+        <input type=" text" id="uName" required>
+        <br>
+        <br>
+        <label for="uEmail" id="label1">Email :</label>
+        <input type="email" name="Email" id="uEmail" required>
+        <br>
+        <br>
+        <label  for="uPhone">PhoneNumper:</label>
+        <input type="tel" name="PhoneNumper" id="uPhone" required>
+            
+        <!-- <br>
+        <br>
+        <label for="uImage" id="label1">Image:</label>
+        <input type="file" name="Image" id="uImage" required> -->
+
+        <br>
+        <br>
+        <br>
+        <button type="submit" onclick="addEmployee()" id="addBtn">addUser</button>
+        <button id="updateBtn"  type="submit" onclick="updateUser()"  >updateUser</button>
+
+
+
+    </div>  
+    
+    <div class="disblay">
+
+        <input type="text" placeholder="search by name" id="searchInput" oninput="searchUser(this.value)">
+        <table  width="500">
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>email</th>
+                    <th>phone</th>                   
+                    <th>Update</th>
+                    <th>Delete</th>
+                    
+                    
+                </tr>
+
+            </thead>
+            <tbody id="tablebady">
+                
+                
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="index.js"></script>
+    
+</body>
+</html>
